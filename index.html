@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devadharshini N | Portfolio</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+@page {
+    size: A4 portrait;
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263438;
+    background: #e8eeee;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+.page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 15px auto;
+    padding: 12mm 11mm;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px #0002;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 17px;
+    border-bottom: 2px solid #138b88;
+}
+
+.profile {
+    width: 34mm;
+    height: 39mm;
+    object-fit: cover;
+    border: 2px solid #138b88;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+.header-info {
+    flex: 1;
+    min-width: 0;
+}
+
+h1 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #183f43;
+    margin: 0 0 7px;
+}
+
+.role {
+    font-size: 11px;
+    color: #138b88;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 10px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.contact-line {
+    font-size: 9px;
+    line-height: 1.8;
+    margin-top: 9px;
+    overflow-wrap: anywhere;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.about {
+    padding: 17px 0 20px;
+}
+
+.section-title {
+    font-size: 12px;
+    color: #138b88;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #cbdcda;
+    padding-bottom: 7px;
+    margin: 0 0 12px;
+}
+
+.about p {
+    font-size: 10px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1.12fr 0.88fr;
+    gap: 22px;
+    flex: 1;
+}
+
+.column {
+    min-width: 0;
+}
+
+section {
+    margin-bottom: 20px;
+    break-inside: avoid;
+}
+
+.item {
+    margin-bottom: 15px;
+    break-inside: avoid;
+}
+
+.item h3 {
+    font-size: 10px;
+    line-height: 1.5;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    color: #263438;
+}
+
+.item p,
+.item li {
+    font-size: 9px;
+    line-height: 1.65;
+    margin: 0;
+}
+
+.meta {
+    color: #138b88;
+    font-size: 9px !important;
+    font-weight: bold;
+    margin-top: 4px !important;
+}
+
+.skill {
+    margin-bottom: 14px;
+}
+
+.skill strong {
+    display: block;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.skill p {
+    font-size: 9px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+ul {
+    padding-left: 15px;
+    margin: 5px 0 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.footer {
+    margin-top: auto;
+    border-top: 1px solid #cbdcda;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 8px;
+    color: #607276;
+}
+
+@media screen and (max-width: 700px) {
+    .page {
+        width: 100%;
+        min-height: 100vh;
+        margin: 0;
+        padding: 22px;
+    }
+
+    .columns {
+        grid-template-columns: 1.12fr 0.88fr;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media print {
+    html, body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white;
+    }
+
+    .page {
+        width: 210mm;
+        height: 297mm;
+        min-height: 297mm;
+        margin: 0;
+        padding: 12mm 11mm;
+        box-shadow: none;
+        overflow: hidden;
+        page-break-after: avoid;
+        page-break-before: avoid;
+    }
+
+    .columns {
+        flex: 1;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+    <header class="header">
+        <img src="profile.jpg" alt="Devadharshini profile photo" class="profile">
+
+        <div class="header-info">
+            <h1>DEVADHARSHINI N</h1>
+            
+            <p class="tagline">
+                Aspiring software developer interested in Artificial
+                Intelligence, problem-solving and building practical
+                technology solutions.
+            </p>
+
+            <div class="contact-line">
+                Email: ndevadharshini10@gmail.com<br>
+                LinkedIn: linkedin.com/in/devadharshini-n-701936331<br>
+                GitHub: github.com/Devadharshini1009
+            </div>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            B.Tech Information Technology student with an interest in
+            software development, Artificial Intelligence and Machine
+            Learning. Eager to apply technical knowledge to real-world
+            challenges, collaborate with teams and continuously learn
+            emerging technologies.
+        </p>
+    </section>
+
+    <div class="columns">
+
+        <div class="column">
+
+            <section>
+                <h2 class="section-title">Education</h2>
+
+                <div class="item">
+                    <h3>B.Tech Information Technology</h3>
+                    <p>Velalar College of Engineering and Technology</p>
+                    <p class="meta">2024 – 2028 | CGPA: 8.47 / 10</p>
+                </div>
+
+                <div class="item">
+                    <h3>Higher Secondary (HSC)</h3>
+                    <p>Meenakshi Ammal Matric Higher Secondary School</p>
+                    <p class="meta">2024 | 84%</p>
+                </div>
+
+                <div class="item">
+                    <h3>SSLC</h3>
+                    <p>Meenakshi Ammal Global School</p>
+                    <p class="meta">2023 | 82.6%</p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">My Projects</h2>
+
+                <div class="item">
+                    <h3>AquaSentinel</h3>
+                    <p>
+                        Water quality monitoring prototype using ESP32
+                        and sensors to measure pH, TDS, turbidity
+                        and temperature.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>AI Food Packaging Recommendation</h3>
+                    <p>
+                        Machine learning solution that recommends
+                        suitable food packaging based on food properties
+                        and storage conditions.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>Payment Test Case Generation</h3>
+                    <p>
+                        AI-assisted test case generation and validation
+                        for subscription and payment checkout pages.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>SIF Sentinel</h3>
+                    <p>
+                        NLP-based safety report analysis to identify
+                        potential serious injury and fatality precursors.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Contact Me</h2>
+
+                <div class="item">
+                    <h3>Email</h3>
+                    <p>ndevadharshini10@gmail.com</p>
+                </div>
+
+                <div class="item">
+                    <h3>LinkedIn</h3>
+                    <p>devadharshini-n</p>
+                </div>
+
+                <div class="item">
+                    <h3>GitHub</h3>
+                    <p>Devadharshini1009</p>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="column">
+
+            <section>
+                <h2 class="section-title">Technical Skills</h2>
+
+                <div class="skill">
+                    <strong>Programming</strong>
+                    <p> Java,OOPS, Data Structures
+                    Machine Learning, Deep Learning, Generative AI, RAG, LLMs</p>
+                </div>
+
+                
+
+    
+            </section>
+
+            <section>
+                <h2 class="section-title">Soft Skills</h2>
+                <ul>
+                    <li>Active Listening</li>
+                    <li>Adaptability</li>
+                    <li>Responsibility</li>
+                    <li>Continuous Learning</li>
+                    <li>Calm Under Pressure</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="section-title">Interests</h2>
+                <ul>
+                    <li>Artificial Intelligence</li>
+                    <li>Prompt Engineering</li>
+                    <li>Software Development</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="section-title">Career Objective</h2>
+                <p style="font-size:9px; line-height:1.7; margin:0;">
+                    To begin my career in software development, use my
+                    programming and AI knowledge to solve practical
+                    problems, contribute to innovative projects and
+                    grow as a technology professional.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="section-title">Languages</h2>
+                <p style="font-size:9px; line-height:1.6; margin:0;">
+                    English
+    
+                </p>
+            </section>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        DEVADHARSHINI N | PORTFOLIO
+    </div>
+
+</div>
+</body>
+</html>
